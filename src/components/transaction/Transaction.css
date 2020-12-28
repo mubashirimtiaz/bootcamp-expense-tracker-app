@@ -1,0 +1,33 @@
+.transaction {
+  position: relative !important;
+}
+.delete-icon {
+  position: absolute;
+  right: -20px !important;
+  display: none;
+}
+.transaction:hover .delete-icon {
+  display: block;
+}
+.delete-icon:hover {
+  background-color: #970a26 !important;
+  cursor: pointer;
+}
+.transaction.income::after {
+  content: "";
+  display: block;
+  position: absolute;
+  padding: 2px;
+  height: 100%;
+  left: 0;
+  background-color: #28a745;
+}
+.transaction.expense::after {
+  content: "";
+  display: block;
+  position: absolute;
+  padding: 2px;
+  height: 100%;
+  left: 0;
+  background-color: #dc3545;
+}
