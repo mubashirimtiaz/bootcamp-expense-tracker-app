@@ -13,7 +13,7 @@ const TransactionContextProvider = ({ children }) => {
     initialState,
     () => {
       return JSON.parse(
-        localStorage.getItem("transactions") || "}{transactions: []"
+        localStorage.getItem("transactions") || JSON.stringify(initialState)
       );
     }
   );
